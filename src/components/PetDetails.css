@@ -1,0 +1,11 @@
+.pet-description {
+  background-color: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.pet-details--image {
+  width: 200px;
+  margin: auto;
+  display: block;
+}

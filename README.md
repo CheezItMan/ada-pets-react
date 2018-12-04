@@ -55,24 +55,24 @@ When the user clicks the `select` button the app should present the user with ad
 
 When the user clicks the `X` button on a PetCard, that animal should be removed from the application, including if that animal is the currently selected pet.
 
-### Wave 3:  Filtering the list
+### Wave 3: Adding Pets
 
-Add a component called `SearchBar`, this component should consist of an input and when the user types in the input field, the list of pets should be filtered to pets whose `about`, `species` or `name` fields match the text in the input.  
+Add a component to the application called `NewPetForm` to add a new Pet.  This should be a controlled form.  New pets should not be added unless they have a name, an image link and a species.  
+
+**Questions:** (same as for wave 2)
+
+- How will a new pet information arrive in a PetCard component?  
+- Will the new component be a functional stateless component or a class component.
+- Draw a diagram of the flow of rendering and callbacks in your app so far, similar to the one we drew in class.
+
+### Optional: Wave 4:  Filtering the list
+
+Add a component called `SearchBar`.  This component should consist of an input and when the user types in the input field, the list of pets should be filtered to only include pets whose `about`, `species` or `name` fields match the text in the input.  You can use JavaScript's [`match`](https://codeburst.io/an-introduction-to-regular-expressions-regex-in-javascript-1d3559e7ac9a) function to assist.  
 
 **Questions**
 
 - Should this component be a functional stateless component or a class component?
 - Which component should track the filtered list of pets?  
-
-### Wave 4: Adding Pets
-
-Add a component to the application called `NewPetForm` to add a new Pet.  This should be a controlled form.  New pets should not be added unless they have a name, an image link and a species.  
-
-**Questions:** (same as for wave 2)
-- How will a new pet information arrive in a PetCard component?  
-- Will the new component be a functional stateless component or a class component.
-- Draw a diagram of the flow of rendering and callbacks in your app so far, similar to the one we drew in class.
-
 ### Optional Enhancements
 
 Don't even read this list until you've completed the core requirements.
