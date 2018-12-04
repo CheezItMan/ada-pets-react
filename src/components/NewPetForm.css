@@ -5,7 +5,7 @@
   font-weight: bold;
 }
 
-.new-pet-form-submit {
+.new-pet-form--submit {
   margin-left: 15px;
 }
 
@@ -13,7 +13,7 @@
   margin: 15px;
 }
 
-.new-pet-form-about {
+.new-pet-form--about {
   width: 400px;
   margin: 10px;
   height: 200px;

@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Pet from './Pet';
+import PetCard from './PetCard';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const PetList = (props) => {
   const petList = props.pets.map((pet) => {
-    return <Pet key={pet.id} 
+    return <PetCard key={pet.id} 
              deletePetCallback={props.deletePetCallback}
              selectPetCallback={props.selectPetCallback} 
              {...pet} />
