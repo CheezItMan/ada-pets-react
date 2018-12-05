@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 import speciesEmoji from '../speciesEmoji';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './PetDetails.css';
 
 const PetDetails = (props) => {
-  console.log(props);
   const { name, location, about, species, images } = props.currentPet;
   return (
     <section className="pet-details">
-      <h2 className="pet-name">{speciesEmoji(species)} {name} {speciesEmoji(species)}</h2>
-      <img src={images[0]} alt={`${name}`} className="pet-details--image" />
-      <article>
+      <section className="pet-details--header">
+        <h2 className="pet-details--name">{speciesEmoji(species)} {name} {speciesEmoji(species)}</h2>
+        <img src={images[0]} alt={`${name}`} className="pet-details--image" />
+      </section>
+      <article className="pet-details--content">
         <h3>About {name}</h3>
         <p>
           {about}

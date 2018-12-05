@@ -43,17 +43,17 @@ Before you start writing code, read through what's already here and make sure yo
 
 ### Wave 1: Viewing Details
 
-When the user clicks the `select` button the app should present the user with additional details on the selected pet.
+When the user clicks the `select` button the app should present the user with additional details on the selected pet.  Read through the provided `propTypes` attribute of the given components, **what information does that provide**?
 
 **Questions:**
 - How will you track which, if any Pet is the currently selected Pet?  Which component will keep the state?
 - Will you need to switch a functional component to a classical component?
-- What event should you listen for?
+- What events should you listen for?
 - Draw a diagram of the flow of rendering and callbacks in your app so far, similar to the one we drew in class.
 
 ### Wave 2: Removing Pets
 
-When the user clicks the `X` button on a PetCard, that animal should be removed from the application, including if that animal is the currently selected pet.
+When the user clicks the `X` button on a PetCard, that animal should be removed from the application, including if that animal is the currently selected pet.  You should ensure that pets do not return when subsequent pets are removed.  
 
 ### Wave 3: Adding Pets
 
@@ -73,7 +73,8 @@ Add a component called `SearchBar`.  This component should consist of an input a
 
 - Should this component be a functional stateless component or a class component?
 - Which component should track the filtered list of pets?  
-### Optional Enhancements
+
+### Further Optional Enhancements
 
 Don't even read this list until you've completed the core requirements.
 

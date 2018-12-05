@@ -1,11 +1,15 @@
+.pet-details {
+  text-align: center;
+}
+
 .pet-details--image {
   width: 200px;
   margin: auto;
   display: block;
 }
 
-.pet-details--name {
-  text-align: center;
+.pet-details--header {
+  display: inline-block;
   font-size: 1.5rem;
   color: navy;
 }

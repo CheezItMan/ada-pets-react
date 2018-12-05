@@ -4,7 +4,7 @@ import PetDetails from './components/PetDetails';
 import SearchBar from './components/SearchBar';
 import NewPetForm from './components/NewPetForm';
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import pets from './data/pets.json';

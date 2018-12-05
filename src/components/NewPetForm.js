@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './NewPetForm.css'
 
 class NewPetForm extends Component {
