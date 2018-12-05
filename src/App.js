@@ -15,7 +15,7 @@ class App extends Component {
     const petList = pets.map((pet) => {
       pet.currentPet = 0;
       pet.images = pet.images.map((filename) => {
-        return `/images/${filename}`;
+        return `./images/${filename}`;
       });
       return pet;
     });
