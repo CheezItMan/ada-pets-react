@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ada-pets-react/precache-manifest.279d56a45873c8e394c6b1034f364939.js"
+  "/ada-pets-react/precache-manifest.e23f7c7ad9e36d8d7100e661125aaf8e.js"
 );
 
 workbox.clientsClaim();
