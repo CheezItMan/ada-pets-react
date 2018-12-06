@@ -13,20 +13,20 @@ const PetCard = (props) => {
     <div className="card pet-card">
 
       <section className="pet-card--header">
-      <button 
-        onClick={() => props.deletePetCallback(props.id)}
-        type="button" 
-        className="close pet-card--close-btn" 
-        aria-label="Close"
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
       { speciesEmoji(species) } {id} - {name} 
         <button 
           onClick={() => {props.selectPetCallback(props.id)}} 
           className="btn btn-primary pet-card--select-pet-btn"
           >
             Select
+        </button>
+        <button 
+          onClick={() => props.deletePetCallback(props.id)}
+          type="button" 
+          className="btn btn-danger pet-card--close-btn" 
+          aria-label="Close"
+        >
+          Remove
         </button>
       </section>
       <section className="pet-card--body">

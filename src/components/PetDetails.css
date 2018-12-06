@@ -13,3 +13,7 @@
   font-size: 1.5rem;
   color: navy;
 }
+
+.pet-details--content {
+  text-align: left;
+}
