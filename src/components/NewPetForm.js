@@ -43,7 +43,9 @@ class NewPetForm extends Component {
     if (name === '' || species === '' || image === '') return;
 
     console.log(event);
-    this.props.addPetCallback(this.state);
+    const pet = this.state;
+    pet.images = [this.state.image];
+    this.props.addPetCallback(pet);
     this.resetState();
   }
 
