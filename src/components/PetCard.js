@@ -23,8 +23,8 @@ const PetCard = (props) => {
         <button 
           onClick={() => props.deletePetCallback(props.id)}
           type="button" 
-          className="btn btn-danger pet-card--close-btn" 
-          aria-label="Close"
+          className="btn btn-danger pet-card--remove-btn" 
+          aria-label="remove"
         >
           Remove
         </button>
