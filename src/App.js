@@ -73,7 +73,7 @@ class App extends Component {
     return (
       <main className="App">
         <header className="app-header">
-          <h1>Ada Pets is Awesome!  I like donuts</h1>
+          <h1>Ada Pets is My Favoritest!</h1>
         </header>
         <section className="search-bar">
           <SearchBar onSearchChange={this.onSearchChange} />
