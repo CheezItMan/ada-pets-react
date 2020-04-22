@@ -37,9 +37,9 @@ class App extends Component {
 
   onSearchChange = (value) => {
     console.log(value);
-    const regex = new RegExp(`${value}`.toUpperCase());
+    const regex = new RegExp(`${ value }`.toUpperCase());
     const petList = pets.filter((pet) => {
-      return regex.test(`${pet.name}${pet.about}${pet.species}`.toUpperCase());
+      return regex.test(`${ pet.name }${ pet.about }${ pet.species }`.toUpperCase());
     });
 
     this.setState({
@@ -65,7 +65,7 @@ class App extends Component {
     })
   }
 
-  render() {
+  render () {
     const { currentPet } = this.state;
 
     const details = currentPet ? <PetDetails currentPet={currentPet} /> : '';
@@ -73,7 +73,7 @@ class App extends Component {
     return (
       <main className="App">
         <header className="app-header">
-          <h1>Ada Pets</h1>
+          <h1>Ada Pets is Awesome!</h1>
         </header>
         <section className="search-bar">
           <SearchBar onSearchChange={this.onSearchChange} />
